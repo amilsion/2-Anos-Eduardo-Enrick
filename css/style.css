@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pulse-brilho {
+    animation: pulse-brilho .7s infinite;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pulse-brilho;
+    display: table;
+    animation-direction: alternate;
+    animation-name: pulse-brilho;
+}
+@keyframes pulse-brilho{0%{transform:scale(1);filter:brightness(100%)}to{transform:scale(1.5);filter:brightness(200%)}}
+
+/* ≡ */
+
+.toggle::after
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  content: 'Veja mais ⇾';
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 2.5rem;
+  border: 0px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active::after
+{
+  content: '×';
+  margin-top: 2px;
+  font-size: 2.5rem;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+  
+  background-image: url("../images/estrada.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .showcase {
+    background-attachment: scroll;
+  }
+}
+.showcase.active
+{
+  right: 400px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.logo
+{
+  display:inline-block;
+  position: relative;
+  z-index: 10;
+}
+.foto
+{
+	position: absolute;
+	z-index: 12;
+    width: 250px;
+    top: -52%;
+    left: 19%;
+}
+.design
+{
+  position: relative;
+  z-index: 13;
+  width:380px;
+  
+}
+.niver
+{
+    position:absolute;
+    top:36%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+	z-index: 15;
+	width:178px;
+}
+.sobren
+{
+    position:absolute;
+    top:49%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+	z-index: 14;
+	width:127px;
+}
+.carros
+{
+    position: absolute;
+    z-index: 1;
+    width: 360px;
+    top: 55%;
+    left: -8%;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  z-index: 5;
+  position: relative;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 20;
+  bottom: -130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 10px;
+  transform: scale(0.5);
+  transition: 0.5s;
+  color: red;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+
+}
+.menu ul
+{
+  position: relative;
+  margin-left: 19px;
+}
+.menu ul li
+{
+    list-style: none;
+    padding-right: 47px;
+    padding-left: 10px;
+    width: 95%;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul li a:hover
+{
+  color: #ffa9f4; 
+}
+
+@media (max-width: 991px)
+{
+	.logo
+	{
+		transform: scale(2.2);
+		top: -17%;
+		left: 26%;
+	}
+	.social {
+		bottom: -370px;
+		left: -10%;
+	}
+	.text {
+		transform: scale(2);
+		top: -2%;
+		left: -26%
+	}
+	.text p {
+		max-width: 400px;
+	}
+	/* .text h2 { */
+		/* position:absolute; */
+		/* top: -2%; */
+		/* left: 0%; */
+	/* } */
+	/* .text h3 { */
+		/* top: -2%; */
+		/* left: 0%; */
+	/* } */
+
+  .showcase,
+  .showcase header
+  {
+    padding: 19px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+  @keyframes examplel {
+	  0%   {left:19%; top:-52%;}
+	  50%  {left:8%!import; top:-49%;}
+	  100% {left:19%; top:-52%;}
+	}
+}
+.anim-cart {
+  animation-name: examplecart;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes examplecart {
+  0%   {button:0px;transform: scale(0.5) translateY(0px)}
+  50%  {button:100px;transform: scale(1) translateY(50px)}
+  100% {button:0px;transform: scale(0.5) translateY(0px)}
+}
+
+
+.anim-right {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   {right:-10px; top:-5px;}
+  50%  {right:0px; top:0px;}
+  100% {right:-10px; top:-5px;}
+}
+
+.anim-left {
+  animation-name: examplel;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes examplel {
+  0%   {left:19%; top:-52%;}
+  50%  {left:20%; top:-49%;}
+  100% {left:19%; top:-52%;}
+}
+
+.animx-left {
+  animation-name: animx;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes animx {
+  0%   {left:50%; top:49%;}
+  50%  {left:52%; top:47%;}
+  100% {left:50%; top:49%;}
+}
+.animy-right {
+  animation-name: animy;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes animy {
+  0%   {left:50%; top:36%;}
+  50%  {left:49%; top:34%;}
+  100% {left:50%; top:36%;}
+}

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/*
+button{
+    outline: none;
+    cursor: pointer;
+}
+*/
+a{
+    text-decoration: none;
+}
+.container{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 1s;
+}
+
+
+.home{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(20deg,  #333 50%, #f00 0);
+  z-index: 3;
+  /* border-radius: 15px; */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.card{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(20deg,  #333 50%, #f00 0);
+  z-index: 4;
+  /* border-radius: 15px; */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.close-btn{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 10px;
+    background: red;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color:#fff;
+    transition: background-color 0.3s;
+	margin-top: 1px;
+	z-index:109999;
+}
+
+.close-btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close-btn:active{
+    transform: translateY(2px)
+}
+
+
+.home-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+    padding: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.home-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 3px;
+    background: linear-gradient(red, #f55, red);
+    border: 1px solid white;
+    padding: 0.22rem 0;
+    width: 70%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    transform: skewX(-10deg);
+    margin-bottom: 1rem;
+	z-index: 15;
+	display: inline-flex;
+}
+
+.confirma{
+    background: linear-gradient(red, #f55, red);
+    border-radius: 50%;
+    border: solid 2px #fff;
+    margin-left: 155px;
+    position: relative;
+    z-index: 5;
+}
+
+.home-para{
+    font-size: 1rem;
+    color:#ddd;
+    width: 85%;
+    text-align: justify;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.home-para i{
+    color:white;
+    font-size: 1.5rem;
+    font-size: italic;
+    position: absolute;
+}
+.home-para::first-letter{
+    margin-left: 40px;
+}
+
+.home-para i:first-child{
+    top:-10%;
+}
+
+.home-para i:last-child{
+    margin-left: 10px;
+    bottom: -10%;
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+    padding: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.card-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 3px;
+    background: linear-gradient( to left, #f00, #f88 );
+    border: 1px solid white;
+    padding: 0.22rem 0;
+    width: 70%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    transform: skewX(-10deg);
+    margin-bottom: 1rem;
+}
+
+.card-para{
+    font-size: 1rem;
+    color:#ddd;
+    width: 85%;
+    text-align: justify;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.card-para i{
+    color:white;
+    font-size: 1.5rem;
+    font-size: italic;
+    position: absolute;
+}
+.card-para::first-letter{
+    margin-left: 40px;
+}
+
+.card-para i:first-child{
+    top:-10%;
+}
+
+.card-para i:last-child{
+    margin-left: 10px;
+    bottom: -10%;
+}
+
+.social-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.social-link{
+    width:35px;
+    height: 35px;
+    border: 1px solid #f00;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 5px;
+    transition: border 0.3s;
+	color: #f00;
+}
+
+.social-link:hover{
+    border: 1px solid dodgerblue;
+}
+
+.social-link:hover .social-icon{
+    color:dodgerblue;
+    transform: translateY(-2px) scale(0.9);
+}
+
+.social-icon{
+    transition: all 0.3s;
+    font-size: 20px;
+    color: white;
+}
+
+
+.card-btn{
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #c00000,  #ffcece);
+    color:#ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	z-index: 109999;
+}
+
+.card-btn:hover{
+    background: linear-gradient(45deg, #ffcece, #c00000);
+  
+}
+
+
+@media (max-width:500px){
+    .card{
+        width: 90%;
+    }
+
+    .card-img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-heading{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-para{
+        font-size: 1rem;
+    }
+
+    .card-para i{
+        font-size: 1rem;
+    }
+    .social-link{
+        width: 30px;
+        height: 30px;
+        margin-left: 1rem;
+    }
+
+    .social-icon{
+        font-size: 15px;
+    }
+    .social-list{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:500px){
+    .home{
+        width: 90%;
+    }
+
+    .home-img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0.5rem;
+    }
+
+    .home-heading{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-para{
+        font-size: 1rem;
+    }
+
+    .home-para i{
+        font-size: 1rem;
+    }
+    .home-link{
+        width: 30px;
+        height: 30px;
+        margin-left: 1rem;
+    }
+
+    .home-icon{
+        font-size: 15px;
+    }
+    .home-list{
+        margin-bottom: 1rem;
+    }
+}
