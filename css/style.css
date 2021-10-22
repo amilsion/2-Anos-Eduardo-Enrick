@@ -28,7 +28,7 @@ header .logo
 
 .pulse-brilho {
     animation: pulse-brilho .7s infinite;
-    animation-duration: 0.7s;
+    animation-duration: 0.3s;
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -232,11 +232,10 @@ header .logo
 }
 .social li a
 {
-  display: inline-block;
-  margin-right: 10px;
-  transform: scale(0.5);
-  transition: 0.5s;
-  color: red;
+    display: inline-block;
+    transform: scale(0.7);
+    transition: 0.5s;
+    color: red;
 }
 .social li a:hover
 {
@@ -266,6 +265,8 @@ header .logo
     padding-right: 47px;
     padding-left: 10px;
     width: 95%;
+	margin-bottom: 3rem;
+	justify-content: space-around;
 }
 .menu ul li a
 {
@@ -279,6 +280,14 @@ header .logo
 
 @media (max-width: 991px)
 {
+	.toggle {
+		bottom: -81vh;
+		left: 33vh;
+		position: absolute;
+	}
+	.menu ul li a {
+		font-size: 2.2rem;
+	}
 	.logo
 	{
 		transform: scale(2.2);
@@ -289,7 +298,7 @@ header .logo
 		top: 11%;
 	}
 	.social {
-		bottom: -248px;
+		bottom: -203px;
 		left: -10%;
 	}
 	.text {
@@ -299,6 +308,28 @@ header .logo
 	}
 	.text p {
 		max-width: 400px;
+	}
+	.card h1 {
+		font-size: 5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		width: 80%;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 7rem;
+	}
+	.contador-container {
+		transform: scale(2);
+		margin-bottom: 3rem;
+	}
+	.card .home-para {
+		font-size: 3rem;
+		color: #eee;
+		margin: 3rem;
+	}
+	.card .card-heading {
+		font-size: 5rem;
+		font-weight: 800;
 	}
 	/* .text h2 { */
 		/* position:absolute; */
@@ -317,11 +348,12 @@ header .logo
   }
   .text h2
   {
-    font-size: 3em;
+    font-size: 2em;
   }
   .text h3
   {
     font-size: 2em;
+	font-weight: 400;
   }
   @keyframes examplel {
 	  0%   {left:19%; top:-52%;}

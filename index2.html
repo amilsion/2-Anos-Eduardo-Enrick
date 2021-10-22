@@ -81,6 +81,9 @@
   </div>
 </div>
 
+<h1 class="convidado"></h1>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script>
@@ -90,6 +93,13 @@ function abreModal() {
   });
 }
 setTimeout(abreModal, 1000);
+</script>
+<script>
+let params = new URLSearchParams(document.location.search.substring(1));
+let nome = params.get("nome"); // retorna a string "Jonathan"
+console.log(nome);
+const meuConvidado = document.querySelector('.convidado');
+meuConvidado.textContent = nome;
 </script>
 </body>
 </html>
