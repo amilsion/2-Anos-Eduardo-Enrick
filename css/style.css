@@ -52,11 +52,12 @@ header .logo
   content: 'Veja mais ⇾';
   font-size: 1.5rem;
   color: #fff;
-  padding: 2.5rem;
+  padding: 2rem;
   border: 0px solid #fff;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  left: -15%;
 }
 .toggle.active::after
 {
@@ -335,9 +336,9 @@ header .logo
   animation-iteration-count: infinite;
 }
 @keyframes examplecart {
-  0%   {button:0px;transform: scale(0.5) translateY(0px)}
-  50%  {button:100px;transform: scale(1) translateY(150px)}
-  100% {button:0px;transform: scale(0.5) translateY(0px)}
+  0%   {left:-19%; button:0px;transform: scale(0.5) translateY(0px)}
+  50%  {left:13%; button:100px;transform: scale(1) translateY(135px)}
+  100% {left:-19%; button:0px;transform: scale(0.5) translateY(0px)}
 }
 
 
