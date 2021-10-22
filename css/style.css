@@ -284,13 +284,16 @@ header .logo
 		top: -17%;
 		left: 26%;
 	}
+	.carros {
+		top: 11%;
+	}
 	.social {
-		bottom: -370px;
+		bottom: -248px;
 		left: -10%;
 	}
 	.text {
 		transform: scale(2);
-		top: -2%;
+		top: 10%;
 		left: -26%
 	}
 	.text p {
@@ -333,7 +336,7 @@ header .logo
 }
 @keyframes examplecart {
   0%   {button:0px;transform: scale(0.5) translateY(0px)}
-  50%  {button:100px;transform: scale(1) translateY(50px)}
+  50%  {button:100px;transform: scale(1) translateY(150px)}
   100% {button:0px;transform: scale(0.5) translateY(0px)}
 }
 
