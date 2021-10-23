@@ -2,9 +2,21 @@
 <html lang="pt-BR" >
 <head>
   <meta charset="UTF-8">
-  <title>2 Anos - Eduardo Enrick</title>
+  <title>CONVITE 2 Anos Eduardo Enrick</title>
   
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  
+      <!-- Minimal -->
+<link rel='icon' type='image/png' href='icone.png'>
+<link rel='icon' sizes='192x192' href='icone.png'>
+<link rel='apple-touch-icon' href='icone.png'>
+<meta name='msapplication-square310x310logo' content='icone.png'>
+
+<!-- Apple -->
+<link rel='apple-touch-icon' href='icone.png'>
+<link rel='apple-touch-icon' sizes='76x76' href='icone.png'>
+<link rel='apple-touch-icon' sizes='120x120' href='icone.png'>
+<link rel='apple-touch-icon' sizes='152x152' href='icone.png'>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/modal.css">
@@ -44,9 +56,9 @@
 	 </div>
 	 
     <div class="text">
-      <h2 class="">Eduardo Enrick</h2> 
+      <h2 class="">25 de dezembro de 2021</h2> 
       <h3>Aniversário de 2 Anos</h3>
-      <p>Vou completar 2 aninhos e mamãe e papai, tem o prazer e festejar essa data especial com você e sua família.</p>
+      <p><span class="convidado"></span> Vou completar 2 aninhos e mamãe e papai, convido você e sua família para festejar essa data muito especial.</p>
       <!--h1 class="home-heading about-btn">Confirmar <i class="confirma bi-whatsapp" style="font-size: 2.5rem;padding:1.5rem"></i></h1-->
 	  <br/><br/>
 	  <img src="images/carros.png" alt="" class="carros anim-cart">
@@ -61,20 +73,20 @@
   </section>
   <div class="menu">
     <ul>
-      <li class="home-heading"><a href="#" data-bs-toggle="modal" data-bs-target="#myModal1">Local <i class="bi-geo"></i></a></li>
-      <li class="home-heading"><a href="#" data-bs-toggle="modal" data-bs-target="#myGift">Presente <i class="bi-gift"></i></a></li>
-      <li class="home-heading"><a href="#" data-bs-toggle="modal" data-bs-target="#mySlide">Galeria <i class="bi-images"></i></a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myModal1" class="home-heading"><a href="#">Local <i class="bi-geo"></i></a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myGift" class="home-heading"><a href="#">Presente <i class="bi-gift"></i></a></li>
+      <li data-bs-toggle="modal" data-bs-target="#mySlide" class="home-heading"><a href="#">Galeria <i class="bi-images"></i></a></li>
       <li class="home-heading"><a href="https://api.whatsapp.com/send?phone=5591993152455&text=Confirmado%2C%20vou%20sim%20com%20toda%20minha%20fam%C3%ADlia!">Confirmar <i class="bi-whatsapp"></i></a></li>
-      <li class="home-heading"><a href="#" data-bs-toggle="modal" data-bs-target="#myGame">Jogar <i class="bi-controller"></i></a></li>
+      <li data-bs-toggle="modal" data-bs-target="#myGame" class="home-heading"><a href="#">Jogar <i class="bi-controller"></i></a></li>
     </ul>
   </div>
 <!-- partial -->
 
 		<div class="modal fade bd-example-modal-lg" id="myModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-fullscreen modal-fluid card modal-content" role="document">
-				<button type="button" class="close-btn close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 1.5rem"><i class="bi-arrow-left"></i></button>
+				<button type="button" class="close-btn close" data-bs-dismiss="modal" aria-label="Close"><i class="bi-arrow-left"></i></button>
 				<img src="images/fantasia-infantil-piloto-vermelho.png" alt="" class="card-img">
-				<h1 class="home-heading">Contagem para meu aniversário!</h1>
+				<h1>Contagem para meu aniversário!</h1>
 
 				<div class="contador-container">
 					<div class="container-el dias">
@@ -101,15 +113,15 @@
 				
 				
 				<p class="home-para"> 
-					<i class="fa fa-quote-left"></i>
+					<i class="fa fa-quote-left"  style="font-size: 4.5rem; color:#888"></i>
 						Meu aniversário será realizado no sindicato dos trabalhadores da educação, SINTEPP 
 						Localizado na Trav das mangueiras, Bairro Centro, Tailândia-PA
-					<i class="fa fa-quote-right"></i>
+					<i class="fa fa-quote-right"  style="font-size: 4.5rem; color:#888"></i>
 				</p>
 				
 				
 
-				<a href="https://goo.gl/maps/9fjHLGuPb6h4okMQ6" target="_blank" class="card-heading"> Ver Local</a>
+				<a href="https://goo.gl/maps/9fjHLGuPb6h4okMQ6" target="_blank" class="card-heading"><i class="bi-pin-map"></i> Ver Local</a>
 				<!--button class="card-btn"> View Profile</button-->
 			</div>
         </div>
@@ -119,47 +131,41 @@
 
 		<div class="modal fade bd-example-modal-lg" id="myGift" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-fullscreen modal-fluid home  modal-content" role="document">
-			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 1.5rem"><i class="bi-arrow-left"></i></button>
+			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close"><i class="bi-arrow-left"></i></button>
 
 				<img src="images/fantasia-infantil-piloto-vermelho.png" alt="" class="home-img">
-				<h1 class="home-heading">Home</h1>
-
+				
+				<div class="gift">
+					<img src="images/camisa.png" alt="" class="blusa anim-blusa">
+					<h1 class="home-heading"> &nbsp;&nbsp;Visto 3 anos</h1>
+				</div>
+				
+				<div class="gift">
+					<img src="images/sapato.png" alt="" class="tenis anim-tenis">
+					<h1 class="home-heading"> &nbsp;&nbsp;Calço 23</h1>
+				</div>
+				
+				
+				<div class="gift">
+					<img src="images/carrinho.png" alt="" class="brinq anin-brinq">
+					<h1 class="home-heading"> &nbsp;Adoro brinquedos</h1>
+				</div>
+				
+				
 				<p class="home-para"> 
-					<i class="fa fa-quote-left"></i>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobilias eius perspiciatis magnam maxime exercitationem quam? Explicabo asperiores illo veritatis! Eveniet, incidunt.
-					<i class="fa fa-quote-right"></i>
+					<i class="fa fa-lg fa-quote-left"  style="font-size: 4.5rem; color:#888"></i>
+						Mais sua presença é o meu melhor presente
+					<i class="fa fa-lg fa-quote-right" style="font-size: 4.5rem; color:#888"></i>
 				</p>
 
-				<ul class="social-list">
-					<li> 
-						<a href="#" class="social-link">
-							<i class="bi-facebook" style="font-size: 1.5rem"></i>
-						</a>
-					</li>
-					<li> 
-						<a href="#" class="social-link">
-							<i class="bi-linkedin" style="font-size: 1.5rem"></i>
-						</a>
-					</li>
-					<li> 
-						<a href="#" class="social-link">
-							<i class="bi-twitter" style="font-size: 1.5rem"></i>
-						</a>
-					</li>
-					<li> 
-						<a href="#" class="social-link">
-							<i class="bi-instagram" style="font-size: 1.5rem"></i>
-						</a>
-					</li>
-				</ul>
-				<button class="card-btn"> View Profile</button> 
+				<!--button class="card-btn"> View Profile</button--> 
 		  </div>
 		</div>
 	
 
 		<div class="modal fade modal-xl bd-example-modal-lg" id="mySlide" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-fullscreen modal-fluid home  modal-content" role="document">
-			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 1.5rem"><i class="bi-arrow-left"></i></button>
+			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close"><i class="bi-arrow-left"></i></button>
 				  <div data-slide="slide" class="slide">
 					<div class="slide-items">
 					  <img src="./images/img1.jpg" alt="Img 1">
@@ -186,7 +192,7 @@
 	
 		<div class="modal fade bd-example-modal-lg" id="myGame" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-fullscreen modal-fluid home  modal-content" role="document">
-			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 1.5rem"><i class="bi-arrow-left"></i></button>
+			<button class="close-btn close" data-bs-dismiss="modal" aria-label="Close"><i class="bi-arrow-left"></i></button>
 
 				<iframe src="game.html" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
@@ -214,6 +220,12 @@ function abreModal() {
 }
 setTimeout(abreModal, 1000);
 </script>
-
+<script>
+	let params = new URLSearchParams(document.location.search.substring(1));
+	let nome = params.get("nome");
+	console.log(nome);
+	const meuConvidado = document.querySelector('.convidado');
+	meuConvidado.textContent = nome.concat(', ');
+</script>
 </body>
 </html>
