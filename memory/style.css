@@ -17,7 +17,7 @@ body {
 body {
   min-height: 100%;
   margin: 0;
-  font: 20px sans-serif;
+  font: 2.2rem sans-serif;
   background: linear-gradient(to left, dodgerblue, #345);
 }
 
@@ -100,7 +100,7 @@ button {
 }
 @media (min-width: 600px) {
   .app__cards-container {
-    max-width: 600px;
+    max-width: 100%;
   }
 }
 .app__cards-container__card {

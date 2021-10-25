@@ -72,7 +72,7 @@ body {
 }
 
 .board {
-  width: 100%;
+  width: 100%!important;
   background: #e2e2e2;
   position: relative;
   display: flex;
