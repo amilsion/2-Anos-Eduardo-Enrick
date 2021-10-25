@@ -504,3 +504,64 @@ and (orientation : portrait) {
   50%  {left:49%; top:34%;}
   100% {left:50%; top:36%;}
 }
+@keyframes moedas {
+      0% {
+        transform: translateY(0%);
+      }
+      50%{
+        transform: translateY(20%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+
+    .social li{
+      animation-name: moedas;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .icone-1{
+      top: 59.8%;
+        left: 5.5%;
+        width: 19.1%;
+        animation-delay: 0.1s;
+    }
+
+    .icone-2{
+      top: 52.1%;
+        left: 10.8%;
+        width: 19.1%;
+        animation-delay: 0.3s;
+    }
+
+    .icone-3{
+      top: 31.3%;
+        left: 3.2%;
+        width: 19.1%;
+        animation-delay: 0.2s;
+    }
+
+    .icone-4{
+      top: 13.8%;
+        left: 12.8%;
+        width: 19.1%;
+        animation-delay: 0.4s;
+    }
+
+    .icone-5{
+      top: 12.8%;
+        left: 22.8%;
+        width: 19.1%;
+        animation-delay: 0.3s;
+    }
+
+    .icone-6{
+      top: 9.4%;
+        left: 46.8%;
+        width: 19.7%;
+        animation-delay: 0.5s;
+    }
