@@ -313,12 +313,13 @@ position: absolute;
   color: #ffa9f4; 
 }
 
-@media (max-width: 991px)
+@media (max-device-width : 991px) 
 {
 	.toggle {
 		bottom: -78vh;
 		left: 35vh;
 		position: absolute;
+    font-weight: 600;
 	}
 	.menu ul li a {
 		font-size: 2.2rem;
@@ -337,7 +338,7 @@ position: absolute;
     top: 47.3%;
     z-index: 2;
     font-size: 2.2rem;
-    background-color: #222222a1;
+    background-color: #f3f3f36e;
     padding: 2rem;
     border-radius: 5rem 5rem 0rem 0rem;
   }
@@ -358,12 +359,12 @@ position: absolute;
 	}
 	.card h1 {
 		font-size: 5rem;
-		font-weight: 800;
+		font-weight: 600;
 		text-transform: uppercase;
 		width: 80%;
 		text-align: center;
 		color: #fff;
-		margin-bottom: 7rem;
+		margin-bottom: 3rem;
 	}
 	.contador-container {
 		transform: scale(2);
@@ -405,6 +406,7 @@ position: absolute;
 	 font-weight: 400;
   }
 }
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
