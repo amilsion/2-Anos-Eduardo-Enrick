@@ -1,0 +1,286 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+[ng-cloak] {
+  opacity: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font: 20px sans-serif;
+  background: linear-gradient(to left, dodgerblue, #345);
+}
+
+.theme1 {
+  background: rgba(217, 38, 38, 0.7);
+}
+
+.theme2 {
+  background: rgba(217, 172, 38, 0.7);
+}
+
+.theme3 {
+  background: rgba(128, 217, 38, 0.7);
+}
+
+.theme4 {
+  background: rgba(38, 217, 83, 0.7);
+}
+
+.theme5 {
+  background: rgba(38, 217, 217, 0.7);
+}
+
+.theme6 {
+  background: rgba(38, 83, 217, 0.7);
+}
+
+.theme7 {
+  background: rgba(128, 38, 217, 0.7);
+}
+
+.theme8 {
+  background: rgba(217, 38, 172, 0.7);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.app {
+  display: block;
+  opacity: 0;
+  transition: opacity 2s;
+  color: white;
+}
+.app.app-ready {
+  opacity: 1;
+}
+.app__hud {
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1em;
+}
+.app__hud__game-info, .app__hud__game-completed {
+  display: inline-block;
+  margin-right: 1em;
+}
+.app__hud__game-status {
+  display: inline-block;
+  font-size: 70%;
+  margin-right: 1em;
+}
+.app__hud__btn-restart {
+  font-size: 70%;
+}
+.app__cards-container {
+  margin: 5rem auto 0;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+@media (min-width: 600px) {
+  .app__cards-container {
+    max-width: 600px;
+  }
+}
+.app__cards-container__card {
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+.app__cards-container__card.ng-leave {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  transition: 2s ease-in-out;
+}
+.app__cards-container__card.ng-leave.ng-leave-active {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  transform: scale3d(0, 0, 0);
+}
+.app__cards-container__card.ng-enter {
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.app__cards-container__card.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.app__cards-container__card:nth-child(1) .front {
+  -webkit-animation-delay: 0.6666666667s;
+          animation-delay: 0.6666666667s;
+}
+.app__cards-container__card:nth-child(2) .front {
+  -webkit-animation-delay: 1.3333333333s;
+          animation-delay: 1.3333333333s;
+}
+.app__cards-container__card:nth-child(3) .front {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.app__cards-container__card:nth-child(4) .front {
+  -webkit-animation-delay: 2.6666666667s;
+          animation-delay: 2.6666666667s;
+}
+.app__cards-container__card:nth-child(5) .front {
+  -webkit-animation-delay: 3.3333333333s;
+          animation-delay: 3.3333333333s;
+}
+.app__cards-container__card:nth-child(6) .front {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.app__cards-container__card:nth-child(7) .front {
+  -webkit-animation-delay: 4.6666666667s;
+          animation-delay: 4.6666666667s;
+}
+.app__cards-container__card:nth-child(8) .front {
+  -webkit-animation-delay: 5.3333333333s;
+          animation-delay: 5.3333333333s;
+}
+.app__cards-container__card:nth-child(9) .front {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.app__cards-container__card:nth-child(10) .front {
+  -webkit-animation-delay: 6.6666666667s;
+          animation-delay: 6.6666666667s;
+}
+.app__cards-container__card:nth-child(11) .front {
+  -webkit-animation-delay: 7.3333333333s;
+          animation-delay: 7.3333333333s;
+}
+.app__cards-container__card:nth-child(12) .front {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.app__cards-container__card:nth-child(13) .front {
+  -webkit-animation-delay: 8.6666666667s;
+          animation-delay: 8.6666666667s;
+}
+.app__cards-container__card:nth-child(14) .front {
+  -webkit-animation-delay: 9.3333333333s;
+          animation-delay: 9.3333333333s;
+}
+.app__cards-container__card:nth-child(15) .front {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.app__cards-container__card:nth-child(16) .front {
+  -webkit-animation-delay: 10.6666666667s;
+          animation-delay: 10.6666666667s;
+}
+.app__cards-container__card__front {
+  text-align: center;
+  line-height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  -webkit-animation: front-cover 2s ease-in-out alternate infinite;
+          animation: front-cover 2s ease-in-out alternate infinite;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__front {
+    line-height: 120px;
+  }
+}
+.app__cards-container__card__front:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.app__cards-container__card__back {
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__back {
+    line-height: 14rem;
+  }
+}
+@media (min-width: 600px) {
+  .app__cards-container__card__back {
+    font-size: 60px;
+  }
+}
+.app__cards-container__card__back > span {
+  display: block;
+  -webkit-animation: back-cover 2s ease-in-out alternate infinite;
+          animation: back-cover 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes back-cover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes back-cover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes front-cover {}
+@keyframes front-cover {}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ng-enter-stagger {
+  transition-delay: 0.1s;
+  transition-duration: 0s;
+}
+
+.ng-leave-stagger {
+  transition-delay: 0.1s;
+  transition-duration: 0s;
+}

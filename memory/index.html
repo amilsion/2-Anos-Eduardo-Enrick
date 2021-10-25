@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Find the match - memory game</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="app" ng-app="app" ng-controller="AppController" ng-class="{'app-ready': appReady}">
+
+  <div class="app__hud">
+
+    <div class="app__hud__game-info" ng-hide="gameCompleted" ng-click="titleAction()" ng-swipe-left="changeIcons()" ng-swipe-right="changeIcons()">Memorize no jogo</div>
+    <div class="app__hud__game-completed" ng-show="gameCompleted">
+      Parabéns!
+    </div>
+    <div class="app__hud__game-status">cliques: {{clickCount}}, cartões: {{cardsLeft}}</div>
+    <button ng-click="restart()" class="app__hud__btn-restart">Reiniciar</button>
+  </div>
+
+  <div class="app__cards-container">
+
+    <div class="app__cards-container__card" role="button" ng-repeat="card in list" id="{{ 'card-' + card.id }}">
+
+      <div class="front app__cards-container__card__front" ng-click="click(card, $index)" ng-swipe-right="click(card, $index)" ng-swipe-left="click(card, $index)"> {{card.isKnown ? "" : "?"}}</div>
+      <div class="back app__cards-container__card__back">
+        <span ng-class="card.theme">{{card.icon}}</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script src='https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-touch.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
