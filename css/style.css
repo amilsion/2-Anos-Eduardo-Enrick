@@ -171,10 +171,14 @@ header .logo
 }
 .gift
 {
-	width: 85%;
+	 width: 85%;
     display: block;
     color: #fff;
     margin: 2rem;
+}
+.info
+{
+    display: none;
 }
 .blusa
 {
@@ -208,7 +212,7 @@ position: absolute;
 
 .text h2
 {
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
@@ -325,6 +329,18 @@ position: absolute;
 		top: -17%;
 		left: 26%;
 	}
+  .info {
+    width: 70%;
+    display: block;
+    color: #fff;
+    position: relative;
+    top: 47.3%;
+    z-index: 20;
+    font-size: 2.2rem;
+    background-color: #222222a1;
+    padding: 2rem;
+    border-radius: 5rem 5rem 0rem 0rem;
+  }
 	.carros {
 		top: 11%;
 	}
@@ -358,6 +374,14 @@ position: absolute;
 		color: #eee;
 		margin: 3rem;
 	}
+  .card .card-heading{
+    padding:1.5rem;
+    font-size:3rem
+  }
+  .card-btn{
+    padding:1.5rem;
+    font-size:3rem
+  }
 	.gift .home-heading {
 		padding: 2rem!important;
 		border: 5px solid white;
