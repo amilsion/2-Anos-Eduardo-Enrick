@@ -185,24 +185,24 @@ header .logo
 	position: absolute;
     z-index: 16;
     width: 250px;
-    top: 30%;
-    left: 3%;
+    top: -90%;
+    left: -10%;
 }
 .tenis
 {
 	position: absolute;
     z-index: 16;
     width: 215px;
-    top: 41%;
-    left: 6%;
+    top: -80%;
+    left: -10%;
 }
 .brinq
 {
 position: absolute;
     z-index: 16;
     width: 280px;
-    top: 55%;
-    left: 0%;
+    top: -42%;
+    left: -15%;
 }
 .text
 {
@@ -422,7 +422,25 @@ and (orientation : portrait) {
     transform: scale(.7)!important;
     top: 47.8%;
   }
-  
+  .gift
+  {
+    transform: scale(.8)!important;
+  }
+  .gift .home-heading {
+    padding: 1rem!important;
+  }
+  .home-img {
+    margin: 5rem 0!important;
+  }
+  .card-img {
+    margin: 5rem 0!important;
+  }
+  .card-heading{
+    font-size: 3.1rem!important;
+    margin: 2rem!important;
+    padding: 1rem!important;
+  }
+
 }
 
 .anim-cart {
