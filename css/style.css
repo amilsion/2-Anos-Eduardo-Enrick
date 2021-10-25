@@ -335,7 +335,7 @@ position: absolute;
     color: #fff;
     position: relative;
     top: 47.3%;
-    z-index: 20;
+    z-index: 2;
     font-size: 2.2rem;
     background-color: #222222a1;
     padding: 2rem;
@@ -402,14 +402,29 @@ position: absolute;
   .text h3
   {
     font-size: 2em;
-	font-weight: 400;
+	 font-weight: 400;
   }
-  @keyframes examplel {
-	  0%   {left:19%; top:-52%;}
-	  50%  {left:8%!import; top:-49%;}
-	  100% {left:19%; top:-52%;}
-	}
 }
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+  .logo
+  {
+    transform: scale(1.9)!important;
+  }
+  .text
+  {
+    transform: scale(1.9)!important;
+  }
+  .info
+  {
+    transform: scale(.7)!important;
+    top: 47.8%;
+  }
+  
+}
+
 .anim-cart {
   animation-name: examplecart;
   animation-duration: 4s;
