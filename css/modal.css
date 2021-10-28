@@ -20,8 +20,9 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0.5rem;
+  margin: auto;
   pointer-events: none;
+  height: 100%;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -126,10 +127,11 @@
   margin: 0.25rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 993px) {
   .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
+    width: 50%!important;
+    margin: auto;
+	height: 100%;
   }
 
   .modal-dialog-scrollable {

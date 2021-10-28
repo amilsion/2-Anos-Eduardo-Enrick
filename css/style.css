@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+h1 {
+	color: #fff;
+}
 header
 {
   position: absolute;
@@ -167,7 +170,9 @@ header .logo
     z-index: 1;
     width: 360px;
     top: 55%;
-    left: -8%;
+	left:-19%; 
+	button:0px;
+	transform: scale(0.5) translateY(0px)
 }
 .gift
 {
@@ -445,6 +450,65 @@ and (orientation : portrait) {
 
 }
 
+@media (min-width: 993px)  { 
+  .logo
+  {
+    transform: scale(1)!important;
+  }
+  .text
+  {
+    transform: scale(1)!important;
+  }
+  .info
+  {
+    transform: scale(1)!important;
+    top: 47.8%;
+  }
+  .gift
+  {
+    transform: scale(.5)!important;
+  }
+  .gift .home-heading {
+	font-size: 5rem;
+	padding: 0rem;
+	width: 134%;
+    margin: -3rem!important;
+  }  
+  .gift img {
+	left:-52%!important;
+  }
+  .home-img {
+	transform: scale(.5)!important;
+    margin: -5rem 0!important;
+  }
+  .card-img {
+    margin: 1rem 0!important;
+	transform: scale(.5)!important;
+  }
+  .card-heading{
+    font-size: 2.1rem!important;
+    margin: 1rem!important;
+    padding: 1rem!important;
+  }
+	.close-btn {
+		transform: scale(.5)!important;
+	}
+	.home-para {
+		transform: scale(.5)!important;
+		width: 180%!important;
+		margin: -4rem!important;
+	}
+	.loc {
+		margin: -0rem!important;
+	}
+	/* .card-heading { */
+		/* transform: scale(.5)!important; */
+	/* } */
+	.slide {
+		margin: 0px auto!important;
+	}
+}
+
 .anim-cart {
   animation-name: examplecart;
   animation-duration: 4s;
@@ -453,7 +517,7 @@ and (orientation : portrait) {
 }
 @keyframes examplecart {
   0%   {left:-19%; button:0px;transform: scale(0.5) translateY(0px)}
-  50%  {left:13%; button:100px;transform: scale(1) translateY(135px)}
+  50%  {left:-5%; button:100px;transform: scale(1) translateY(140px)}
   100% {left:-19%; button:0px;transform: scale(0.5) translateY(0px)}
 }
 
