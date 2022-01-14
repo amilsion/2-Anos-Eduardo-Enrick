@@ -3,7 +3,7 @@ const horasEl = document.getElementById('horas');
 const minutosEl = document.getElementById('minutos');
 const segundosEl = document.getElementById('segundos');
 
-const niver = "25 Dec 2021";
+const niver = "25 Dec 2022";
 
 function contagem() {
     const newNiverDate = new Date(niver);
